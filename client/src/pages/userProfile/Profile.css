@@ -1,0 +1,54 @@
+/* styles.css */
+
+/* Style the profile div */
+#profile {
+    width: calc(100% - 200px); /* Adjusted width to consider border size */
+    height: calc(100vh - 200px); /* Adjusted height to consider border size */
+    border: 2px solid #4a4a6e; /* Light black-blue border */
+    background-color: #0f0f2e; /* Same background color */
+    margin: 100px; /* Margin to shrink the entire box */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+/* Style elements with IDs */
+#firstName,
+#lastName,
+#email,
+#diningDollars,
+#schillers,
+#meals {
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+}
+
+/* Style personalInfo and MoneyInfo divs */
+.personalInfo,
+.MoneyInfo {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Style identifier and entered_value divs */
+#identifier {
+    color: blue; /* Blue text color */
+    font-size: 12px; /* Smaller font size */
+}
+
+#entered_value {
+    font-weight: bold; /* Make the text bold */
+    font-size: 16px; /* Larger font size */
+}
+
+/* Add some distance between MoneyInfo and personalInfo */
+.MoneyInfo {
+    margin-left: 20px; /* Margin between MoneyInfo and personalInfo */
+}
+
+/* Style identifier and entered_value divs */
+#identifier,
+#entered_value {
+    display: inline; /* Set both divs to display inline */
+}

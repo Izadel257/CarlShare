@@ -1,0 +1,34 @@
+/* buttonStyles.css */
+
+/* Style the credentials button */
+
+#log{
+    width: calc(100% - 200px); /* Adjusted width to consider border size */
+    height: calc(100vh - 200px); /* Adjusted height to consider border size */
+    border: 2px solid #4a4a6e; /* Light black-blue border */
+    background-color: #0f0f2e; /* Same background color */
+    margin: 100px; /* Margin to shrink the entire box */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: b
+}
+#credentials {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    font-size: 16px; /* Adjust the font size */
+    font-weight: bold; /* Make the text bold */
+    border: 2px solid blue; /* Add a rectangular border with a blue color */
+    background-color: #007bff; /* Very blue background color */
+    padding: 10px 20px; /* Add padding to the button */
+    color: white; /* White text color */
+    border-radius: 5px; /* Add a slight border radius for a softer look */
+    cursor: pointer; /* Show pointer cursor on hover */
+}
+
+/* Style the credentials button on hover */
+#credentials:hover {
+    background-color: #0056b3; /* Darker blue background color on hover */
+}
