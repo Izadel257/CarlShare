@@ -1,0 +1,85 @@
+#send {
+    width: calc(100% - 200px); /* Adjusted width to consider border size */
+    height: calc(100vh - 200px); /* Adjusted height to consider border size */
+    border: 2px solid #4a4a6e; /* Light black-blue border */
+    background-color: #0f0f2e; /* Same background color */
+    margin: 100px; /* Margin to shrink the entire box */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+/* Style for div with id "name" */
+#name {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px; /* Add spacing between "name" and "money" */
+  }
+  
+  /* Style for div with id "money" */
+#money {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Style for p with id "sent-to" and "enter-amount" */
+#sent-to,
+#enter-amount {
+    font-family: Arial, sans-serif; /* Set font family */
+    font-size: 16px; /* Set font size */
+  }
+  
+  /* Style for input with id "recipient" and "sum-sent" */
+#recipient,
+#sum-sent {
+    border: none; /* Remove default border */
+    outline: none; /* Remove default outline */
+    padding: 10px; /* Add padding */
+    transition: background-color 0.3s; /* Add transition for background color */
+    font-family: "Times New Roman", Times, serif; /* Set font family */
+    font-size: 16px; /* Set font size */
+  }
+  
+  /* Dark blue background color upon click */
+#recipient:focus,
+#sum-sent:focus {
+    background-color: #001f3f; /* Dark blue color */
+    color: white; /* White text color */
+  }
+  
+
+/* Style for button with id "okay" */
+  #okay {
+    position: absolute;
+    bottom: 120px;
+    right: 30%; /* Position 10% from the right edge of the "send" element */
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    font-size: 30px;
+    color: #cccccc;
+  }
+  
+  /* Style for button with id "cancel" */
+  #cancel {
+    position: absolute;
+    bottom: 120px;
+    left: 30%; /* Position 10% from the left edge of the "send" element */
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    font-size: 30px;
+    color:#2c2c2c;
+  }
+  
+  /* Dark blue background color and white text upon hover */
+  #okay:hover,
+  #cancel:hover {
+    background-color: #001f3f; /* Dark blue color */
+    color: white; /* White text color */
+  }
