@@ -13,22 +13,37 @@
     align-items: center;
     box-sizing: b
 }
-#credentials {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, 50%);
-    font-size: 16px; /* Adjust the font size */
-    font-weight: bold; /* Make the text bold */
-    border: 2px solid blue; /* Add a rectangular border with a blue color */
-    background-color: #007bff; /* Very blue background color */
-    padding: 10px 20px; /* Add padding to the button */
-    color: white; /* White text color */
-    border-radius: 5px; /* Add a slight border radius for a softer look */
-    cursor: pointer; /* Show pointer cursor on hover */
+
+#inputs {
+    width: 300px; /* Adjust the width of the form as needed */
+    margin: 0 auto; /* Center the form horizontally */
 }
 
-/* Style the credentials button on hover */
-#credentials:hover {
-    background-color: #0056b3; /* Darker blue background color on hover */
+#inputs label {
+    display: block; /* Display labels as block elements */
+    font-size: 16px; /* Font size for labels */
+    margin-bottom: 5px; /* Add margin below each label for spacing */
+}
+
+#inputs input {
+    width: 100%; /* Make inputs fill the width of the form */
+    font-size: 16px; /* Font size for inputs */
+    padding: 8px; /* Adjust padding inside input fields */
+    margin-bottom: 10px; /* Add margin below each input for spacing */
+    box-sizing: border-box; /* Include padding and border in the width */
+    border: 1px solid #ccc; /* Example border style */
+    border-radius: 4px; /* Example border radius */
+}
+
+#login-button {
+    /* Other button styles */
+    padding: 10px 20px; /* Example padding */
+    background-color: #007bff; /* Example background color */
+    color: white; /* Example text color */
+    border: none; /* Example border */
+    cursor: pointer; /* Set cursor to pointer by default */
+}
+
+#login-button:hover {
+    cursor: pointer; /* Change cursor to pointer on hover */
 }

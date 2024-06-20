@@ -26,7 +26,7 @@ function Login(){
     };
     return (
         <div id = "log">
-            <form onSubmit={handleSubmit}>
+            <form onSubmit={handleSubmit} id= "inputs">
                 <label>Username:</label>
                 <input type="text" value={username} onChange={(e) => setUsername(e.target.value)} />
                 <br/>
@@ -36,7 +36,7 @@ function Login(){
                 <label>Institution ID:</label>
                 <input type="text" value={institutionId} onChange={(e) => setInstitutionId(e.target.value)} />
                 <br />
-                <button type="submit">Login</button>
+                <button type="submit" id = "login-button">Login</button>
             </form>
             <div>{response}</div>
         </div>
